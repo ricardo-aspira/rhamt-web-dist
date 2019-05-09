@@ -7,7 +7,7 @@ After cloning this repository, being at main folder, run: `docker build -t rhamt
 # Running the image locally
 After building the image, you can run the image with: `docker run --name rhamt -d -p 8080:8080 rhamt`.
 
-In case you want to run it from  **dockerhub**, just do: `docker run --name rhamt -d -p 8080:8080 ricardosouzamorais\rhamt`
+In case you want to run it from  **dockerhub**, just do: `docker run --name rhamt -d -p 8080:8080 ricardosouzamorais/rhamt`
 
 To check the logs an a tail way, run: `docker logs -f rhamt`
 
