@@ -17,4 +17,4 @@ EXPOSE 8080
 
 USER jboss
 
-ENTRYPOINT ["/opt/rhamt-web-distribution-4.2.1.Final/run_rhamt.sh", "-b 0.0.0.0"]
+ENTRYPOINT ["/opt/rhamt-web-distribution-4.2.1.Final/run_rhamt.sh", "-b 0.0.0.0", "-Dwindup.data.dir=/opt/rhamt-h2-data"]
