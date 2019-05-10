@@ -7,7 +7,11 @@ ADD migrationtoolkit-rhamt-web-distribution-4.2.1-with-authentication.zip /tmp/m
 RUN unzip -o /tmp/migrationtoolkit-rhamt-web-distribution-4.2.1-with-authentication.zip -d /opt
 
 RUN useradd jboss
-RUN chown jboss:jboss /opt/rhamt-web-distribution-4.2.1.Final -R
+
+RUN mkdir /opt/submitted-ears && \
+    mkdir /opt/rhamt-h2-data
+
+RUN chown jboss:jboss /opt -R
 
 EXPOSE 8080
 
