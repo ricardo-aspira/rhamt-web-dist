@@ -1,6 +1,11 @@
 # Purpose
 This is a project to construct an image of [RedHat Application Migration Toolkit](https://developers.redhat.com/products/rhamt/overview/).
 
+# Prerequisites
+* Docker version 18.09.2
+* git-lfs/2.3.4
+* git version 2.17.1
+
 # Building the image
 After cloning this repository, being at main folder, run: `docker build -t rhamt:4.2.1 -t rhamt:latest .`
 
