@@ -7,10 +7,10 @@ This is a project to construct an image of [RedHat Application Migration Toolkit
 * git version 2.17.1
 
 # Building the image
-After cloning this repository, being at main folder, run: `docker build -t rhamt:4.2.1 -t rhamt:latest .`
+After cloning this repository, being at main folder, run: `docker build -t ricardosouzamorais/rhamt:4.2.1 -t ricardosouzamorais/rhamt:latest .`
 
 # Running the image locally
-After building the image, you can run the image with: `docker run -d -p 8080:8080 rhamt`.
+After building the image, you can run the image with: `docker run -d -p 8080:8080 ricardosouzamorais/rhamt`.
 
 In case you want to run it from  **dockerhub**, just do: `docker run -d -p 8080:8080 ricardosouzamorais/rhamt`<br/>
 The **RHAMT** uses an H2 database to store all analysis but since it is done inside the container, in case you lose it , all data will be lost.
